@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Crease (https://forums.wyze.com/u/Crease) -->
+<svg version="1.1" viewBox="0 0 360 360" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+		.flair-base{
+			fill:#00d0b9;
+			stroke:#3f3f3f;
+			stroke-width:2;
+		}
+		.flair-group{
+			fill:#ffffff;
+			stroke:#00d0b9;
+			stroke-width:4;
+		}
+</style>
+	<g id="Flair_WyzeTeam">
+		<g id="Base_WyzeTeam" class="flair-base">
+			<rect x="1" y="1" width="358" height="358" />
+		</g>
+		<g id="Group_WyzeTeam" class="flair-group">
+			<path d="m303.9 90.098-81.372 174.89-42.508-93.517-37.65-81.372h-25.505l49.795 108.09-30.363 66.798-80.158-174.89h-25.505l93.517 201.61 4.858 9.7161h17.003l4.8581-9.7161 30.363-66.798 30.363 66.798 4.858 9.7161h17.003l4.858-9.7161 91.088-201.61z" />
+		</g>
+	</g>
+</svg>
