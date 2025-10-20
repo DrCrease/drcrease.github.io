@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	Created by Crease (https://forums.wyze.com/u/Crease)
+	Source: https://web.archive.org/web/*/https://wyze.com/media/athlete2/default/wyze_blue.svg
+		(https://web.archive.org/web/20191208211715/https://wyze.com/media/athlete2/default/wyze_blue.svg)
+-->
+<svg version="1.1" viewBox="0 0 72 18" xmlns="http://www.w3.org/2000/svg">
+  <style>
+      .logo {
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 0px;
+				position: fixed;
+			}
+
+			/* 100% opacity */
+			.st0 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+			}
+
+			/* 20% transparency for (left?) vertical bar portions */
+			.st1 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+				fill-opacity: 0.8;
+			}
+
+			/* 40% transparency */
+			.st2 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+				fill-opacity: 0.6;
+			}
+
+			/* 60% transparency for vertical bar portions */
+			.st3 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+				fill-opacity: 0.4;
+			}
+
+			/* 80% transparency for corners/fills */
+			.st4 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+				fill-opacity: 0.2;
+			}
+
+			/* 100% transparency for hiding groups */
+			.st5 {
+				fill-rule: evenodd;
+				clip-rule: evenodd;
+				fill: #00d0b9;
+				fill-opacity: 0;
+			}
+
+			.th {
+				font: bold 4px sans-serif;
+			}
+  </style>
+
+  <g id="WYZE7" class="st0" transform="translate(0.2,0.3)">
+    <g id="W">
+      <!-- "W" -->
+      <path d="M22.5,0 l-6.7,14.4 l-2.5,-5.5 l-1,-2.2 L9.2,0 H7.1 l4.1,8.9 l-2.5,5.5 L2.1,0 H0 l7.7,16.6 l0.4,0.8 h1.4 l0.4,-0.8 l2.5,-5.5 l2.5,5.5 l0.4,0.8 h1.4 l0.4,-0.8 L24.6,0 H22.5 z" />
+    </g>
+    <g id="Y">
+      <!-- "Y" -->
+      <path d="M37.8,0 l-5.1,9 l-5.1,-9 h-2.2 l6.3,11.2 v6.2 h1.9 v-6.2 L40,0 H37.8 z" />
+    </g>
+    <g id="Z">
+      <!-- "Z" -->
+      <path d="M41.1,0 v1.9 H52 L40.4,17.4 h14.7 v-1.9 H44.2 L55.8,0 L41.1,0 z" />
+      <!-- fade "Z" from 100% to 0% opacity and back over 7 seconds -->
+      <animate id="animZ" attributeName="fill-opacity" begin="0s" values="1;0.8;0.6;0.4;0.2;0;0;0;0.2;0.4;0.6;0.8;1;1;1" dur="7s" repeatCount="indefinite" />
+    </g>
+    <g id="7th" class="st5">
+      <!-- "7th" -->
+      <g id="7">
+        <!-- "7" -->
+        <path d="M41.1,0 v1.9 H52 L40.4,17.4 h2.4 L55.8,0 L41.1,0 z" />
+      </g>
+      <g id="th">
+        <!-- "th" -->
+        <text x="45" y="17.4" textLength="11.2" lengthAdjust="spacingAndGlyphs" class="th">th</text>
+      </g>
+      <!-- fade "7th" from 0% to 100% opacity and back over 7 seconds -->
+      <animate id="anim7th" attributeName="fill-opacity" begin="0s" values="0;0.2;0.4;0.6;0.8;1;1;1;0.8;0.6;0.4;0.2;0;0;0" dur="7s" repeatCount="indefinite" />
+    </g>
+    <g id="E">
+      <!-- top bar of "E" -->
+      <path d="M56.7,1.8 h14.9 V0 H56.7 L56.7,1.8 z" />
+      <!-- middle bar of "E" -->
+      <path d="M56.7,9.4 h14.9 V7.6 H56.7 L56.7,9.4 z" />
+      <!-- bottom bar of "E" -->
+      <path d="M56.7,17.4 h14.9 v-1.8 H56.7 L56.7,17.4 z" />
+    </g>
+  </g>
+</svg>

@@ -1,1 +1,164 @@
-
+<html>
+  <head>
+    <!-- Created by Crease (https://forums.wyze.com/u/Crease) -->
+    <title>Wyze Graphics</title>
+    <!-- I'm not sure which font(s) I want to use. -->
+    <!-- Inter (https://rsms.me/inter/) -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Gilroy (https://www.tinkov.info/gilroy.html, https://www.cdnfonts.com/gilroy-bold.font) Gilroy-Light, Gilroy-Regular, Gilroy-Medium, Gilroy-Bold, Gilroy-Heavy -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gilroy-bold">
+    <!-- IBM Plex Sans (https://www.ibm.com/plex/, https://fonts.google.com/specimen/IBM+Plex+Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap">
+    <!-- IBM Plex Serif (https://www.ibm.com/plex/, https://fonts.google.com/specimen/IBM+Plex+Serif, https://fonts.google.com/specimen/IBM+Plex+Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Inter font bullshit... (insert this between the <style></style> tags if you want to use it)
+      :root {
+        font-family: Inter, sans-serif;
+        font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+      }
+      @supports (font-variation-settings: normal) {
+        :root { font-family: InterVariable, sans-serif; }
+      }
+-->
+    <style>
+/* Gilroy font bullshit ... */
+      h1 {
+        font-family: 'Gilroy-Bold', sans-serif;
+      }
+      summary {
+        font-family: 'Gilroy-Medium', sans-serif;
+      }
+      p {
+        font-family: 'Gilroy-Regular', sans-serif;
+      }
+      code {
+        font-family: "IBM Plex mono", monospace;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 0.8em;
+      }
+      .image-grid {
+          display: grid;
+          grid-template-columns: repeat(auto, minmax(min-content, 1fr));
+          /* grid-auto-columns: 1fr; */
+          grid-gap: 10px;
+          width: 100%;
+      }
+      .svg-image {
+          width: 100%; /* Take full width of the grid cell */
+          height: auto; /* Maintain aspect ratio */
+/*          display: inline-block;  */
+      }
+/* IBM Plex font bullshit...
+      p {
+        font-family: "IBM Plex Serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+      h1 {
+        font-family: "IBM Plex Serif", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+*/
+/* BEGIN some Duck.ai bullshit... */
+      body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+/*          align-items: center; */
+      }
+      .image-row {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          margin: 10px 0;
+      }
+      .image-wrapper {
+          flex: 1; /* Each image takes equal available space */
+/*          max-width: 200px; /* Set a max width for larger SVGs */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      figure {
+        display: flex;
+        flex: 1;
+      }
+      figcaption {
+        display: flex; /* this and the following line are probably bullshit */
+        flex: 1;
+        flex-flow: column wrap;
+        font-family: 'Gilroy-Light', sans-serif;
+      }
+      img {
+          width: 100%; /* Scale the SVG to fit the wrapper */
+          height: auto; /* Maintain aspect ratio */
+      }
+/* END some Duck.ai bullshit... */
+    </style>
+  </head>
+  <body>
+    <h1>Hey, Wyze Fans!</h1>
+      <p>This HTML isn&rsquo;t pretty, but it&rsquo;s not meant to be.  (I didn&rsquo;t cook up any super fancy CSS to go with it.)  Hopefully the graphics look better and/or are more useful than this garbage markup.  You can expand the sections below to look at the pictures and decide for yourself.  Because the images are SVGs, they should scale in each section/row to make use of the available page width, and you can click an individual image to see it all blowed up an&rsquo; whatnot.</p>
+      <p>Feel free to steal these SVGs and use as you will.  I hand-coded them (using the source noted in the comment of each as a starting point) rather than using a GUI editor and tried to comment along the way so that hopefully any necessary future modifications should be relatively straightforward.  There might still be some extraneous code in them because of that, but it shouldn&rsquo;t cause any problems or junk them up like a graphical program might.</p>
+      <p>Because of that superfluous code, please note that the availability of these images is subject to change and that I may do some additional clean-up/refinement with these at some point.  For instance, while translating these from <a href="https://codepen.io/collection/rBOWjb">CodePen</a> and preparing them as stand-alone SVGs, I noticed that there are some unnecessary line commands in the paths, and many of the paths themselves are a mix of relative and absolute coordinates, which just seems messy.  (I was just experimenting and learning to write SVGs&mdash;and, specifically, SVG animation&mdash;when I created these, so gimme a break, eh?)  Anyway, if you <em>do</em> use them, then please <a href="https://forums.wyze.com/u/Crease">contact me via personal message at Wyze Forum</a>.  I&rsquo;d like to know how/if these are being used and also be able to update any users if/when I get around to doing clean-up.</p>
+      <details>
+        <summary>Wyze Logo Graphics Examples</summary>
+        <p>These were created using the design and color found in <code><a href="https://web.archive.org/web/*/https://wyze.com/media/athlete2/default/wyze_blue.svg">https://web.archive.org/web/*/https://wyze.com/media/athlete2/default/wyze_blue.svg</a></code> as the starting point:  <a href="https://web.archive.org/web/20191208211715/https://wyze.com/media/athlete2/default/wyze_blue.svg"><img src="https://web.archive.org/web/20191208211715if_/https://wyze.com/media/athlete2/default/wyze_blue.svg" style="height:1em !important; width:auto !important;" alt="Wyze logo source image" title="Wyze logo source image" /></a></p>
+        <details>
+          <summary>Wyze 7</summary>
+          <p>This is a set of tests of an idea incorporating &ldquo;7&rdquo; into the Wyze logo for the 7 year anniversary. I began with static images based on an actual Wyze SVG logo image (noted as the &ldquo;Source&rdquo; in a comment in the XML) and then decided to try some animation effects to morph the &ldquo;Z&rdquo; into a stylized &ldquo;7th&rdquo;.</p>
+          <div class="image-row">
+            <a href="Wyze7-static-v1.svg" class="image-wrapper"><img src="Wyze7-static-v1.svg" alt="Wyze 7 Years Test Static v1" title="Wyze 7 Years Test Static v1" /></a>
+            <a href="Wyze7-static-v2.svg" class="image-wrapper"><img src="Wyze7-static-v2.svg" alt="Wyze 7 Years Test Static v2" title="Wyze 7 Years Test Static v2" /></a>
+          </div>
+          <div class="image-row">
+            <a href="Wyze7-animated-v1.svg" class="image-wrapper"><img src="Wyze7-animated-v1.svg" alt="WYZE ➜ WY7thE Animated Test v1" title="WYZE ➜ WY7thE Animated Test v1" /></a>
+          </div>
+        </details>
+        <details>
+          <summary>Wyze 8</summary>
+          <p>This is a set of tests of an idea incorporating &ldquo;8&rdquo; into the Wyze logo for the 8 year anniversary. I began with static images based on an actual Wyze SVG logo image (noted as the &ldquo;Source&rdquo; in a comment in the XML) and then decided to try some animation effects to morph the stylized &ldquo;E&rdquo; into a stylized &ldquo;8&rdquo;.</p>
+          <div class="image-row">
+            <a href="Wyze8-static-v1.svg" class="image-wrapper"><img src="Wyze8-static-v1.svg" alt="Wyze 8 Years Test Static v1" title="Wyze 8 Years Test Static v1" /></a>
+            <a href="Wyze8-static-v2.svg" class="image-wrapper"><img src="Wyze8-static-v2.svg" alt="Wyze 8 Years Test Static v2" title="Wyze 8 Years Test Static v2" /></a>
+            <a href="Wyze8-static-v3.svg" class="image-wrapper"><img src="Wyze8-static-v3.svg" alt="Wyze 8 Years Test Static v3" title="Wyze 8 Years Test Static v3" /></a>
+            <a href="Wyze8-static-v4.svg" class="image-wrapper"><img src="Wyze8-static-v4.svg" alt="Wyze 8 Years Test Static v4" title="Wyze 8 Years Test Static v4" /></a>
+            <a href="Wyze8-static-v5.svg" class="image-wrapper"><img src="Wyze8-static-v5.svg" alt="Wyze 8 Years Test Static v5 (removed parts display at 20% opacity)" title="Wyze 8 Years Test Static v5 (removed parts display at 20% opacity)" /></a>
+          </div>
+          <div class="image-row">
+            <a href="Wyze8-animated-v1.svg" class="image-wrapper"><img src="Wyze8-animated-v1.svg" alt="Wyze 8 Years Test Animated v1" title="Wyze 8 Years Test Animated v1" /></a>
+            <a href="Wyze8-animated-v2.svg" class="image-wrapper"><img src="Wyze8-animated-v2.svg" alt="Wyze 8 Years Test Animated v2" title="Wyze 8 Years Test Animated v2" /></a>
+            <a href="Wyze8-animated-v3.svg" class="image-wrapper"><img src="Wyze8-animated-v3.svg" alt="Wyze 8 Years Test Animated v3" title="Wyze 8 Years Test Animated v3" /></a>
+            <a href="Wyze8-animated-v4.svg" class="image-wrapper"><img src="Wyze8-animated-v4.svg" alt="Wyze 8 Years Test Animated v4" title="Wyze 8 Years Test Animated v4" /></a>
+          </div>
+          <div class="image-row">
+            <a href="Wyze78-animated-v1.svg" class="image-wrapper"><img src="Wyze78-animated-v1.svg" alt="Wyze 7➜8 Years Animated Test v1" title="Wyze 7➜8 Years Animated Test v1" /></a>
+            <a href="Wyze78-animated-v2.svg" class="image-wrapper"><img src="Wyze78-animated-v2.svg" alt="Wyze 7➜8 Years Animated Test v2" title="Wyze 7➜8 Years Animated Test v2" /></a>
+          </div>
+        </details>
+        <details>
+          <summary>Wyze 9 (coming later)</summary>
+          <p style="text-decoration: line-through;">This is a set of tests of an idea incorporating &ldquo;9&rdquo; into the Wyze logo for the 9 year anniversary. I began with static images based on an actual Wyze SVG logo image (noted as the &ldquo;Source&rdquo; in a comment in the XML) and then decided to try some animation effects to morph the stylized &ldquo;E&rdquo; into a stylized &ldquo;9&rdquo;.</p>
+        </details>
+      </details>
+      <hr />
+      <details>
+        <summary>Wyze Forum Flair Examples (coming later)</summary>
+        <p>Meh.</p>
+      </details>
+  </body>
+</html>
