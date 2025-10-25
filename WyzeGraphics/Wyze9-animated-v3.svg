@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Crease (https://forums.wyze.com/u/Crease) -->
+<!--
+    Source: https://web.archive.org/web/*/https://wyze.com/media/athlete2/default/wyze_blue.svg
+      (https://web.archive.org/web/20191208211715/https://wyze.com/media/athlete2/default/wyze_blue.svg)
+-->
+<svg version="1.1" viewBox="0 0 72 18" xmlns="http://www.w3.org/2000/svg"><!-- x="0px" y="0px" style="enable-background:new 0 0 72 18;" xml:space="preserve"> -->
+	<style type="text/css">
+    .logo {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px;
+      position: fixed;
+      /* top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+    }
+
+    .st0 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+    }
+
+    /* 20% transparency for (left?) vertical bar portions */
+    .st1 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+      fill-opacity: 0.8;
+    }
+
+    /* 40% transparency */
+    .st2 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+      fill-opacity: 0.6;
+    }
+
+    /* 60% transparency for vertical bar portions */
+    .st3 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+      fill-opacity: 0.4;
+    }
+
+    /* 80% transparency for corners/fills */
+    .st4 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+      fill-opacity: 0.2;
+    }
+
+    /* 100% transparency for hiding groups */
+    .st5 {
+      fill-rule: evenodd;
+      clip-rule: evenodd;
+      fill: #00d0b9;
+      fill-opacity: 0;
+    }
+  </style>
+  <g id="WYZE9" class="st0" transform="translate(0.2,0.3)">
+    <g id="W">
+      <!-- "W" -->
+      <path d="M22.5,0 l-6.7,14.4 l-2.5,-5.5 l-1,-2.2 L9.2,0 H7.1 l4.1,8.9 l-2.5,5.5 L2.1,0 H0 l7.7,16.6 l0.4,0.8 h1.4 l0.4,-0.8 l2.5,-5.5 l2.5,5.5 l0.4,0.8 h1.4 l0.4,-0.8 L24.6,0 H22.5 z" />
+    </g>
+    <g id="Y">
+      <!-- "Y" -->
+      <path d="M37.8,0 l-5.1,9 l-5.1,-9 h-2.2 l6.3,11.2 v6.2 h1.9 v-6.2 L40,0 H37.8 z" />
+    </g>
+    <g id="Z">
+      <!-- "Z" -->
+      <path d="M41.1,0 v1.9 H52 L40.4,17.4 h14.7 v-1.9 H44.2 L55.8,0 L41.1,0 z" />
+    </g>
+    <g id="E">
+      <!-- top bar of "E" -->
+      <path d="M56.7,1.8 h14.9 V0 H56.7 L56.7,1.8 z" />
+      <!-- middle bar of "E" -->
+      <path d="M56.7,9.4 h14.9 V7.6 H56.7 L56.7,9.4 z" />
+      <!-- bottom bar of "E" -->
+      <path d="M56.7,17.4 h14.9 v-1.8 H56.7 L56.7,17.4 z" />
+      <!-- fade full "E" bars from 100% to 0% opacity and back over 8 seconds -->
+      <animate id="animE" attributeName="fill-opacity" begin="0s" values="1;0.8;0.6;0.4;0.2;0;0;0;0;0;0.2;0.4;0.6;0.8;1;1;1;1;1" dur="9s" repeatCount="indefinite" />
+    </g>
+    <g id="E9">
+      <g id="E9-E">
+        <!-- top bar of "E" with curved top corners -->
+        <path d="M56.7,1.8 h14.9 q0,-1.8,-1.8,-1.8 H58.5 Q56.7,0,56.7,1.8 z" />
+        <!-- middle bar of "E" with split ends -->
+        <path d="m56.7,7.6 q0,1.8,1.8,1.8 h13.1 v-1.8 h-14.9 z" />
+        <!-- bottom bar of "E" with curved bottom corners -->
+        <path d="M56.7,15.6 h14.9 q0,1.8,-1.8,1.8 H58.5 Q56.7,17.4,56.7,15.6 z" />
+      </g>
+      <g id="E9-9" class="st5">
+        <g id="9_tall" class="st5">
+          <!-- "8" bars with half-height "E" bar space -->
+          <g id="9L_tall">
+            <!-- upper-left vertical bar of "9" -->
+            <path d="M56.7,2.7 h1.8 v4 H56.7 L56.7,2.7 z" />
+          </g>
+          <g id="9R_tall">
+            <!-- upper-right vertical bar of "9" -->
+            <path d="M71.6,2.7 h-1.8 v4 H71.6 L71.6,2.7 z" />
+            <!-- lower-right vertical bar of "9" -->
+            <path d="M71.6,10.3 h-1.8 v4.4 H71.6 L71.6,10.3 z" />
+          </g>
+        </g>
+        <g id="9_short">
+          <!-- "8" bars with full-height "E" bar space -->
+          <g id="9L_short">
+            <!-- upper-left vertical bar of "9" -->
+            <path d="M56.7,3.6 h1.8 v2.2 H56.7 L56.7,3.6 z" />
+            <!-- lower-left vertical bar of "9" -->
+            <path d="M56.7,11.2 h1.8 v2.6 H56.7 L56.7,11.2 z" class="st5" />
+            <!-- fade "9" bars from 0% to 100% opacity and back over 9 seconds -->
+            <animate id="anim8Lshort" attributeName="fill-opacity" begin="0s" values="0;0.2;0.4;0.6;0.8;1;1;1;1;1;0.8;0.6;0.4;0.2;0;0;0;0;0" dur="9s" repeatCount="indefinite" />
+          </g>
+          <g id="9R_short">
+            <!-- upper-right vertical bar of "9" -->
+            <path d="M71.6,3.6 h-1.8 v2.2 H71.6 L71.6,3.6 z" />
+            <!-- lower-right vertical bar of "9" -->
+            <path d="M71.6,11.2 h-1.8 v2.6 H71.6 L71.6,11.2 z" />
+            <!-- fade "9" bars from 0% to 50% opacity and back over 9 seconds -->
+            <animate id="anim8Rshort" attributeName="fill-opacity" begin="0s" values="0;0.1;0.2;0.3;0.4;0.5;0.5;0.5;0.5;0.5;0.4;0.3;0.2;0.1;0;0;0;0;0" dur="9s" repeatCount="indefinite" />
+          </g>
+        </g>
+      </g>
+      <g id="corners_fills" class="st5">
+        <!-- upper-left corner -->
+        <path d="M56.7,0 v1.8 q0,-1.8,1.8,-1.8 h-1.8 L56.7,0 z" />
+        <!-- upper-right corner -->
+        <path d="M71.6,0 v1.8 q0,-1.8,-1.8,-1.8 h1.8 L71.6,0 z" />
+        <!-- middle-left fill -->
+        <path d="M56.7,7.6 q0,0.9,0.9,0.9 q-0.9,0,-0.9,0.9 v-1.8 L56.7,7.6 z" />
+        <!-- middle-right fill -->
+        <path d="M71.6,7.6 q0,0.9,-0.9,0.9 q0.9,0,0.9,0.9 v-1.8 L71.6,7.6 z" />
+        <!-- lower-left corner -->
+        <path d="M56.7,17.4 v-1.8 q0,1.8,1.8,1.8 h-1.8 L56.7,17.4 z" />
+        <!-- lower-right corner -->
+        <path d="M71.6,17.4 v-1.8 q0,1.8,-1.8,1.8 h1.8 L71.6,17.4 z" />
+      </g>
+    </g>
+  </g>
+</svg>
